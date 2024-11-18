@@ -1,0 +1,82 @@
+<!-- templates/donate.html -->
+{% extends "base.html" %}
+{% block title %}Donate{% endblock %}
+{% block content %}
+<div class="donate-container">
+    <div class="donate-hero">
+        <h1>Support Our Cause</h1>
+        <p class="subtitle">Your Donation Makes a Difference</p>
+    </div>
+
+    <section class="donation-options">
+        <div class="donation-types">
+            <div class="donation-card">
+                <h2>One-Time Donation</h2>
+                <div class="amount-buttons">
+                    <button class="amount-btn">$25</button>
+                    <button class="amount-btn">$50</button>
+                    <button class="amount-btn">$100</button>
+                    <button class="amount-btn">$200</button>
+                    <button class="amount-btn custom">Custom Amount</button>
+                </div>
+                <button class="donate-now-btn">Donate Now</button>
+            </div>
+
+            <div class="donation-card">
+                <h2>Monthly Donation</h2>
+                <div class="amount-buttons">
+                    <button class="amount-btn">$10/mo</button>
+                    <button class="amount-btn">$25/mo</button>
+                    <button class="amount-btn">$50/mo</button>
+                    <button class="amount-btn">$100/mo</button>
+                    <button class="amount-btn custom">Custom Amount</button>
+                </div>
+                <button class="donate-now-btn">Become a Monthly Donor</button>
+            </div>
+        </div>
+
+        <div class="impact-showcase">
+            <h2>Your Impact</h2>
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <h3>$25</h3>
+                    <p>Provides school supplies for one child for a month</p>
+                </div>
+                <div class="impact-card">
+                    <h3>$50</h3>
+                    <p>Supplies clean water to a family for three months</p>
+                </div>
+                <div class="impact-card">
+                    <h3>$100</h3>
+                    <p>Funds medical supplies for a rural clinic for a week</p>
+                </div>
+                <div class="impact-card">
+                    <h3>$200</h3>
+                    <p>Sponsors a child's education for six months</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-ways">
+        <h2>Other Ways to Help</h2>
+        <div class="ways-grid">
+            <div class="way-card">
+                <h3>Volunteer</h3>
+                <p>Join our volunteer program and contribute your time and skills.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="way-card">
+                <h3>Corporate Partnerships</h3>
+                <p>Partner with us to create lasting social impact.</p>
+                <a href="#" class="learn-more">Contact Us</a>
+            </div>
+            <div class="way-card">
+                <h3>Fundraise</h3>
+                <p>Start your own fundraising campaign to support our cause.</p>
+                <a href="#" class="learn-more">Start Now</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

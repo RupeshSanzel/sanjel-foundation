@@ -1,0 +1,79 @@
+<!-- templates/projects.html -->
+{% extends "base.html" %}
+{% block title %}Our Projects{% endblock %}
+{% block content %}
+<div class="projects-container">
+    <div class="projects-hero">
+        <h1>Our Projects</h1>
+        <p class="subtitle">Making a Difference Through Action</p>
+    </div>
+
+    <section class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='img/pro1.jpeg') }}" alt="Education Project">
+            </div>
+            <div class="project-content">
+                <h2>Education for All</h2>
+                <p class="location">Location: Multiple Countries</p>
+                <p class="description">Providing quality education to underprivileged children through school building, teacher training, and educational resources.</p>
+                <div class="project-stats">
+                    <div class="stat">
+                        <span class="number">5000+</span>
+                        <span class="label">Students Reached</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">20</span>
+                        <span class="label">Schools Built</span>
+                    </div>
+                </div>
+                <a href="#" class="project-button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='img/pro2.jpeg') }}" alt="Healthcare Project">
+            </div>
+            <div class="project-content">
+                <h2>Healthcare Access</h2>
+                <p class="location">Location: Rural Communities</p>
+                <p class="description">Improving access to healthcare through mobile clinics, medical camps, and health education programs.</p>
+                <div class="project-stats">
+                    <div class="stat">
+                        <span class="number">10000+</span>
+                        <span class="label">Patients Treated</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50</span>
+                        <span class="label">Medical Camps</span>
+                    </div>
+                </div>
+                <a href="#" class="project-button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='img/pro3.jpeg') }}" alt="Environment Project">
+            </div>
+            <div class="project-content">
+                <h2>Environmental Conservation</h2>
+                <p class="location">Location: Global</p>
+                <p class="description">Protecting our environment through tree planting, waste management, and environmental education initiatives.</p>
+                <div class="project-stats">
+                    <div class="stat">
+                        <span class="number">100000+</span>
+                        <span class="label">Trees Planted</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">30</span>
+                        <span class="label">Communities Served</span>
+                    </div>
+                </div>
+                <a href="#" class="project-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

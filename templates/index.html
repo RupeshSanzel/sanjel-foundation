@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="hero">
+    <h1>Making a Difference Together</h1>
+    <p>Join us in our mission to create positive change in communities worldwide.</p>
+    <a href="{{ url_for('donate') }}" class="cta-button">Donate Now</a>
+</div>
+
+<section class="features">
+    <div class="feature-card">
+        <h2>Our Mission</h2>
+        <p>Empowering communities through sustainable development and education.</p>
+    </div>
+    <div class="feature-card">
+        <h2>Our Impact</h2>
+        <p>Reaching over 10,000 people across 20 countries.</p>
+    </div>
+    <div class="feature-card">
+        <h2>Get Involved</h2>
+        <p>Join our volunteer program and make a difference.</p>
+    </div>
+</section>
+{% endblock %}

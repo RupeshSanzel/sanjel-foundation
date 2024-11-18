@@ -1,0 +1,78 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<div class="about-container">
+    <div class="about-hero">
+        <h1>About Our Organization</h1>
+        <p class="subtitle">Committed to Making a Difference Since 2010</p>
+    </div>
+
+    <section class="about-section">
+        <div class="about-content">
+            <div class="mission-vision">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>To empower communities through sustainable development, education, and healthcare initiatives, creating lasting positive change in the lives of those we serve.</p>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <p>A world where every individual has access to education, healthcare, and opportunities for sustainable growth and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Our Leadership Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='img/img1.jpg') }}" alt="Team Member">
+                </div>
+                <h3>Sanjel Rupesh</h3>
+                <p class="position">Executive Director</p>
+                <p class="bio">20+ years of experience in non-profit management and community development.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='img/img2.jpg') }}" alt="Team Member">
+                </div>
+                <h3>Sanjel Ram Prasad</h3>
+                <p class="position">Program Director</p>
+                <p class="bio">Leading our educational initiatives with 15 years of teaching experience.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='img/img3.jpg') }}" alt="Team Member">
+                </div>
+                <h3>Sanjel Asmita</h3>
+                <p class="position">Operations Manager</p>
+                <p class="bio">Expertise in project management and community engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <h2>Our Impact</h2>
+        <div class="impact-stats">
+            <div class="stat-card">
+                <h3>10,000+</h3>
+                <p>Lives Impacted</p>
+            </div>
+            <div class="stat-card">
+                <h3>20+</h3>
+                <p>Countries Reached</p>
+            </div>
+            <div class="stat-card">
+                <h3>50+</h3>
+                <p>Active Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3>1000+</h3>
+                <p>Volunteers</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
